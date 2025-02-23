@@ -1,7 +1,7 @@
 Regression Categorical Data Analysis
 ================
-Sanjana Battula
-2025-02-23
+Sanjana Battula, Kajal Gupta and Farah Beche
+2024-12-13
 
 ### Loading The Data
 
@@ -93,7 +93,7 @@ ggplot(NMES1988, aes(x = visits)) +
   labs(title = "Distribution of Physician Visits", x = "Number of Visits", y = "Frequency")
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/variable%20plots-1.png)<!-- -->
+![](<Figures/variable%20plots-1.png>)
 
 # ———————- Bivariate Analysis ———————-
 
@@ -104,7 +104,7 @@ cor_matrix <- cor(cor_data, method = "spearman")
 corrplot(cor_matrix, method = "square")
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](<Figures/unnamed-chunk-3-1.png>)
 
 ``` r
 # Cross-tabulations
@@ -556,7 +556,7 @@ ggplot(NMES1988, aes(x = insurance, y = visits, color = gender)) +
   theme_minimal()
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](<Figures/unnamed-chunk-9-1.png>)
 
 ``` r
 library(ggplot2)
@@ -599,7 +599,7 @@ ggplot(NMES1988, aes(x = insurance, y = visits, color = health)) +
   theme_minimal()
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](<Figures/unnamed-chunk-10-1.png>)
 
 # ———————- Final Model Selection ———————-
 
@@ -622,7 +622,7 @@ ggplot(predictions, aes(x = health, y = pred_visits, fill = insurance)) +
        x = "Health Status", y = "Predicted Visits")
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](<Figures/unnamed-chunk-12-1.png>)
 
 # ———————- Goodness-of-Fit ———————-
 
@@ -643,4 +643,4 @@ qqnorm(pearson_residuals, main = "Q-Q Plot of Pearson Residuals" , col= "skyblue
 qqline(pearson_residuals, col = "salmon", lwd = 2)
 ```
 
-![](Regression-Categorical-Data-Analysis_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](<Figures/unnamed-chunk-13-1.png>)
