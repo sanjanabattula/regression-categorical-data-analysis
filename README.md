@@ -1,9 +1,7 @@
 # The Impact of Insurance on Physician Office Visits among Medicare Beneficiaries Aged 66 and Over: A Statistical Analysis Using NMES1988 Data
 **GPH-GU 2354: Categorical Data Analysis**  
 
-**Sanjana Battula** 
-**Farah Beche**  
-**Kajal Gupta**  
+**Sanjana Battula, Farah Beche, Kajal Gupta**  
  
 ---
 
